@@ -1,0 +1,28 @@
+# Data manifest.
+#
+# This demo runs on SYNTHETIC spatial tissue generated in-process
+# (spatialniche.synth.generate) — no download is required and `make run` needs
+# no network. No real spatial data is present in this repository.
+#
+# This file documents the public spatial-transcriptomics datasets and methods
+# the approach targets, so the capability claim is legible.
+
+datasets:
+  - name: 10x-visium-breast
+    platform: 10x Visium
+    tissue: breast cancer
+    use: spot deconvolution + niche mapping
+    license: 10x Genomics public datasets (per-dataset terms)
+    note: "Spot x gene matrix + tissue coordinates; pair with a matched scRNA reference."
+
+  - name: 10x-xenium-panel
+    platform: 10x Xenium
+    tissue: various
+    use: high-resolution niche mapping
+    license: 10x Genomics public datasets (per-dataset terms)
+
+# Reference deconvolution / niche methods (public; implemented here from scratch):
+#   RCTD            -- Cable et al., Nat Biotechnol 2022
+#   SpatialDWLS     -- Dong & Yuan, Genome Biol 2021
+#   cell2location   -- Kleshchevnikov et al., Nat Biotechnol 2022
+#   squidpy         -- Palla et al., Nat Methods 2022 (neighborhood enrichment)
