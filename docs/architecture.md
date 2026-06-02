@@ -1,6 +1,6 @@
 # Architecture
 
-One Python process, three method modules, three substrate hooks — the same
+One Python process, three method modules, three substrate hooks, the same
 house style as the rest of the capability-portrait portfolio.
 
 ## Control flow
@@ -33,7 +33,7 @@ house style as the rest of the capability-portrait portfolio.
 
 Each spot is a mixture of cell types, so its expression is approximately the
 proportion-weighted sum of the cell-type reference signatures. Recovering the
-proportions is therefore a non-negative least-squares problem — the transparent
+proportions is therefore a non-negative least-squares problem, the transparent
 public baseline behind RCTD / SpatialDWLS / cell2location (which add
 probabilistic noise models and regularization). NNLS keeps the demo legible,
 deterministic, and dependency-light while demonstrating the method.
@@ -42,7 +42,7 @@ deterministic, and dependency-light while demonstrating the method.
 
 A niche is defined by what is *around* a spot, not just the spot itself.
 Summarizing each spot by its spatial-neighbourhood mean composition and
-clustering those vectors recovers recurrent tissue niches — the squidpy-style
+clustering those vectors recovers recurrent tissue niches, the squidpy-style
 neighborhood pattern, implemented with scikit-learn. Recovery is scored against
 the synthetic ground-truth regions (ARI), so the claim is measurable.
 

@@ -8,7 +8,7 @@
 > are present in this repository.
 
 **What this shows**: the spatial-transcriptomics analysis axis of computational
-oncology — (1) **spot deconvolution**, estimating per-spot cell-type proportions
+oncology, (1) **spot deconvolution**, estimating per-spot cell-type proportions
 from a Visium-style spot × gene matrix against a single-cell reference signature
 (non-negative least squares); and (2) **spatial niche detection**, building a
 neighborhood graph over spot coordinates and clustering recurrent tissue niches
@@ -21,8 +21,8 @@ network and no GPU. Everything is seeded.
 (no-op when no server is configured), and exposes a deterministic canary the lab
 monitoring layer probes daily.
 
-**Production framing**: methods in this class — reference-based spot
-deconvolution and neighborhood niche analysis — are applied to real Visium /
+**Production framing**: methods in this class, reference-based spot
+deconvolution and neighborhood niche analysis, are applied to real Visium /
 Xenium cohorts in practice (RCTD, SpatialDWLS, cell2location, squidpy). This
 repository implements the **method and the engineering** from public building
 blocks only, on synthetic data. See
@@ -59,7 +59,7 @@ A 24×24 spot section (576 spots, 120 genes, 6 cell types):
 | Deconvolution mean absolute error (proportions) | **0.060** |
 | Niche-recovery ARI (detected niches vs ground-truth regions) | **0.921** |
 
-These describe *this synthetic dataset* — an illustration of the method working
+These describe *this synthetic dataset*, an illustration of the method working
 end to end, not a benchmark claim about real tissue.
 
 ## Quickstart

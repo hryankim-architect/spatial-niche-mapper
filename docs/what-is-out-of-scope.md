@@ -17,7 +17,7 @@ honest about what it is and is not.
 - **Probabilistic deconvolution** (negative-binomial noise models, variational
   inference à la cell2location). NNLS is the legible baseline used here.
 - **Real spatial file formats** (AnnData h5ad, Zarr, 10x SpaceRanger output) and
-  the `[spatial]` stack (scanpy / squidpy) — documented as the real-data path,
+  the `[spatial]` stack (scanpy / squidpy), documented as the real-data path,
   not exercised in the synthetic demo.
 - **Image / H&E registration.** Spot coordinates are used; histology image
   alignment is out of scope.
