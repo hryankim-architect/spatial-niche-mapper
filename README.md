@@ -2,10 +2,9 @@
 
 ![ci](https://github.com/hryankim-architect/spatial-niche-mapper/actions/workflows/ci.yml/badge.svg) ![english-only](https://github.com/hryankim-architect/spatial-niche-mapper/actions/workflows/english-only.yml/badge.svg)
 
-> **Capability portrait, not a research result.** All data is synthetic and
-> deterministically generated; the demo is byte-reproducible on a single
-> workstation in seconds. No patient data and no proprietary code or parameters
-> are present in this repository.
+> All data is synthetic and deterministically generated from a fixed seed.
+> No patient data and no proprietary code or parameters are present.
+> Running `make run` takes a few seconds on any laptop — no GPU, no network.
 
 **What this shows**: the spatial-transcriptomics analysis axis of computational
 oncology, (1) **spot deconvolution**, estimating per-spot cell-type proportions
@@ -17,16 +16,13 @@ neighborhood graph over spot coordinates and clustering recurrent tissue niches
 **Reproducibility**: `make run` produces the metrics artifact in seconds, no
 network and no GPU. Everything is seeded.
 
-**Substrate**: emits a hash-chained NDJSON audit ledger, tracks MLflow runs
-(no-op when no server is configured), and exposes a deterministic canary the lab
-monitoring layer probes daily.
+**Substrate**: every run extends a NDJSON trail whose records link by hash. MLflow tracking stays dormant without a server, and the lab monitor pings a fixed canary each day.
 
-**Production framing**: methods in this class, reference-based spot
-deconvolution and neighborhood niche analysis, are applied to real Visium /
-Xenium cohorts in practice (RCTD, SpatialDWLS, cell2location, squidpy). This
-repository implements the **method and the engineering** from public building
-blocks only, on synthetic data. See
-[`docs/what-is-out-of-scope.md`](docs/what-is-out-of-scope.md).
+**Standard practice**: reference-based spot deconvolution and neighborhood niche analysis
+are standard practice on real Visium / Xenium cohorts (RCTD, SpatialDWLS,
+cell2location, squidpy). This repo implements those methods from public building
+blocks against synthetic data to demonstrate the technique and the engineering.
+See [`docs/what-is-out-of-scope.md`](docs/what-is-out-of-scope.md).
 
 ---
 

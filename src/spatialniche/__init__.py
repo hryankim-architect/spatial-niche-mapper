@@ -1,4 +1,4 @@
-"""spatialniche: a spatial-transcriptomics niche-mapping capability portrait.
+"""spatialniche: a spatial-transcriptomics niche-mapping self-contained demo.
 
 A clean-room demonstration of the spatial-transcriptomics analysis pattern:
 
