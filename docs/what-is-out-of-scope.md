@@ -29,5 +29,6 @@ Explicit boundaries for this repo. Small scope kept intentionally.
 
 ## How to add an item
 
-Open a PR that adds the item here with a one-sentence reason and a link to the
-proposing issue. The friction is intentional.
+File an issue first. Then open a PR that appends the item to the relevant
+section above, states the reason in one sentence, and links back to that issue.
+Scope changes go through review the same way code changes do.
