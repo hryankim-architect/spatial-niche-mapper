@@ -1,6 +1,6 @@
 # `spatial-niche-mapper`
 
-![ci](https://github.com/hryankim-architect/spatial-niche-mapper/actions/workflows/ci.yml/badge.svg) ![english-only](https://github.com/hryankim-architect/spatial-niche-mapper/actions/workflows/english-only.yml/badge.svg)
+![ci](https://github.com/hryankim-architect/spatial-niche-mapper/actions/workflows/ci.yml/badge.svg)
 
 > All data is synthetic and deterministically generated from a fixed seed.
 > No patient data and no proprietary code or parameters are present.
@@ -76,7 +76,6 @@ make canary      # deterministic deconvolution-recovery check
 ├── LICENSE                      # MIT
 ├── Makefile
 ├── pyproject.toml               # [spatial] extra = scanpy/squidpy/anndata
-├── .github/workflows/           # ci.yml + english-only.yml
 ├── data/manifest.yaml           # public Visium/Xenium datasets + methods targeted
 ├── src/spatialniche/
 │   ├── synth.py                 # deterministic Visium-style section + ground truth
