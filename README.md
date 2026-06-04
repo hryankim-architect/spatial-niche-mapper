@@ -2,6 +2,10 @@
 
 ![ci](https://github.com/hryankim-architect/spatial-niche-mapper/actions/workflows/ci.yml/badge.svg)
 
+> **One principle, applied here.** Pick the smallest, most interpretable representation that could carry the signal; measure it against an honest baseline; report the verdict faithfully — whether the compact choice wins, ties, or loses. *That last step is why AI safety is needed: knowing a capability is real rather than a flattering benchmark.*
+>
+> In this repo: **representation** a neighbourhood-composition vector over a spatial k-NN → **baseline** per-spot proportions / raw expression → **verdict** compact *wins*: niche ARI 0.921 (per-spot proportions re-find cell types, not regions).
+
 > All data is synthetic and deterministically generated from a fixed seed.
 > No patient data and no proprietary code or parameters are present.
 > Running `make run` takes a few seconds on any laptop — no GPU, no network.
